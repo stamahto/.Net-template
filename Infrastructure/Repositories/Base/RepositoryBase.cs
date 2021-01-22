@@ -20,7 +20,7 @@ namespace PROJECT.Repositories.Base
             return await _context.Set<T>().ToListAsync();
         }
 
-        public async Task<T> FindAsync(int id)
+        public async Task<T> FindAsync(string id)
         {
             return await _context.Set<T>().FindAsync(id);
         }
@@ -60,7 +60,7 @@ namespace PROJECT.Repositories.Base
             await _context.SaveChangesAsync();
         }
 
-        public bool Exists(int id)
+        public bool Exists(string id)
         {
             return _context.Set<T>().Any(e => e.Id == id);
         }
