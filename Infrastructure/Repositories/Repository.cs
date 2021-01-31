@@ -1,9 +1,9 @@
 using PROJECT.Data;
 using PROJECT.Entities;
-using PROJECT.Repositories.Base;
-using PROJECT.Repositories.Interfaces;
+using PROJECT.Infrastructure.Repositories.Base;
+using PROJECT.Infrastructure.Repositories.Interfaces;;
 
-namespace PROJECT.Repositories
+namespace PROJECT.Infrastructure.Repositories
 {
     public class Repository : RepositoryBase<ENTITY>, IRepository
     {
