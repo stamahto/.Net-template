@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PROJECT.Repositories.Base
+namespace PROJECT.Infrastructure.Repositories.Base
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : EntityBase
     {
